@@ -9,9 +9,12 @@ export default class Header extends React.Component {
   }
 
   render() {
+
     return (
       <div>
-      <Title />
+    <Title atchoum={this.props.whaaat}
+    />
+
       {/* }  <Title title={this.props.title} />
         <input value={this.props.title} onChange={this.handleChange.bind(this)} />
 */}

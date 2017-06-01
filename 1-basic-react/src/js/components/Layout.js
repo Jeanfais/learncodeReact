@@ -5,12 +5,21 @@ import Header from "./Header";
 
 export default class Layout extends React.Component {
 
+
 render() {
+
+  const title = "Welcome will !";
 
   return(
 
   <div>
-  <Header />
+
+  <Header title = "Welcome will !" whaaat= {"no understand me"}
+addingelement = {"in the object"} newProp={"for Header"}
+  />
+  <Header title = {"different title"} newProp={"it could be r"}
+   whaaat= {title}
+  />
   <Footer />
   </div>
 
@@ -39,4 +48,15 @@ render() {
     );
   }
 }
+
+
+------
+constructor() {
+  super();
+    this.state = { name: "will"};
+
+}
+
+
+
 */}
