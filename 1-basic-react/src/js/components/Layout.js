@@ -4,7 +4,22 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 export default class Layout extends React.Component {
-  constructor() {
+
+render() {
+
+  return(
+
+  <div>
+  <Header />
+  <Footer />
+  </div>
+
+  );
+}
+}
+
+
+  {/* constructor() {
     super();
     this.state = {
       title: "Welcome",
@@ -24,3 +39,4 @@ export default class Layout extends React.Component {
     );
   }
 }
+*/}
