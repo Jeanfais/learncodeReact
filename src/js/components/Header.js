@@ -12,7 +12,7 @@ export default class Header extends React.Component {
 
     return (
       <div>
-    <Title atchoum={this.props.whaaat}
+    <Title title={this.props.title}
     />
 
       {/* }  <Title title={this.props.title} />

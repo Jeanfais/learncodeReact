@@ -5,20 +5,26 @@ import Header from "./Header";
 
 export default class Layout extends React.Component {
 
+constructor(){
+  super();
+  this.state = {title: "title in the constructor"
+}
+
+}
 
 render() {
+  setTimeout(() => {
+    this.setState({title: "title changed after 2s "});
+  }, 2000);
 
-  const title = "Welcome will !";
 
   return(
 
   <div>
 
-  <Header title = "Welcome will !" whaaat= {"no understand me"}
-addingelement = {"in the object"} newProp={"for Header"}
+  <Header title = {this.state.title}
   />
-  <Header title = {"different title"} newProp={"it could be r"}
-   whaaat= {title}
+  <Header title = {"different title"}
   />
   <Footer />
   </div>
